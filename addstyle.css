@@ -1,0 +1,250 @@
+/*CSS FOR SHOP */
+*{
+	margin: 0;
+	padding: 0;
+}
+.tiles .ittem .text{
+	font-size:18px ;
+}
+.shopheader{
+	background: black;
+    display: flex;
+	flex-direction:column ;
+	height: 60vh;
+	background-image: url(image/shopmain.jpg);
+	box-shadow: inset 0 0 0 1000px rgba( 0, 0, 0, 0.3);
+	background-size:cover ;
+	grid-column: 1 / -1;
+}
+.ittem{
+	display: grid;
+	grid-template-columns: 1;
+	grid-template-rows:1 ;
+	overflow: hidden;
+}
+
+.tiles{
+	display: grid;
+	grid-column: 2 / -2;
+	grid-template-columns: repeat(2, 1fr) !important;
+	grid-column-gap: 20px;
+	
+	margin-bottom:100px ;
+}
+.tiles .ittem{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	font-size: 30px;
+	flex-direction:column ;
+}
+
+.text, .button, .come{
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.underline-one {
+	
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.underline-one:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.underline-one:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+.tiles .ittem img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.buttonn{
+	background-color: black !important;
+	color: white;
+	border-radius: 7px;
+	height: 40px;
+	width: 100px;
+	border: 1px solid white;
+	display: flex;
+justify-content: center;
+	align-items: center;
+	text-shadow: 0 0 2px whitesmoke;
+
+
+}
+.ittem a{
+ margin-top: 0px;
+
+}
+.ittem .text{
+	margin: 0;
+	padding: 0;
+}
+.tiles2 item{
+	margin-bottom: 10px;
+}
+
+
+
+
+
+/*-------------*/
+
+
+
+.aboutheader{
+	background: black;
+    display: flex;
+	flex-direction:column ;
+	height: 80vh;
+	background-image: url(image/about.jpg);
+	box-shadow: inset 0 0 0 1000px rgba( 0, 0, 0, 0.5);
+	background-size:cover ;
+	grid-column: 1 / -1;
+
+}
+.tiles_team {
+	display: grid;
+	grid-column: 2 / -2;
+	grid-template-columns: repeat(4, 1fr);
+
+	grid-column-gap: 100px;
+	grid-row-gap: 100px;
+	margin-bottom: 100px;
+
+
+}
+.tiles_team .item2{
+display: flex;
+flex-direction: column;
+justify-content: center;
+font-size: 18px;
+}
+
+
+.tiles_team .item2 p{
+	margin: 25px;
+}
+
+
+.tiles_team .item2 img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0 0 0 1000px rgba( 0, 0, 0, 0.5);
+	background-size:cover ;
+}
+.tiles_team .position{
+	font-size: 18px;
+	color: #888;
+}
+.description{
+
+	grid-column: 2 / -2;
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 60px 0;
+	padding-right: 15vw;
+}
+
+.workers{
+	display: flex;
+	justify-items: center;
+	align-items: center;
+}
+
+.overlay2{
+	background: rgba(0, 0, 0, 0.4);
+grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	display: grid;
+	justify-items: center;
+	align-items: end;
+	color: coral;
+	z-index: 2;	
+}
+.tiles2{
+	display: grid;
+	grid-column: 2 / -2;
+	grid-template-columns: repeat(4, 1fr) !important;
+	grid-column-gap: 20px;
+	
+	margin-bottom:100px ;
+}
+
+/*-------------*/
+
+.contactheader{
+	background: black;
+    display: flex;
+	flex-direction:column ;
+	height: 80vh;
+	background-image: url(image/ofice.jpg);
+	box-shadow: inset 0 0 0 1000px rgba( 0, 0, 0, 0.5);
+	background-size:cover ;
+	grid-column: 1 / -1;
+}
+input{
+box-sizing: border-box;
+width: 100%;
+border: none;
+border-bottom: 1px solid black;
+font-size: 18px;
+padding: 20px 5px;\
+margin: 30px 0;
+}
+
+
+.forma{
+	grid-column: 2 / -2;
+	display: flex;
+	flex-direction: column;
+}
+input:focus{
+	outline: none;
+}
+
+#submit{
+	margin: 20px;
+	width: 300px;
+	border-radius: 40px;
+	background-color: black;
+	color: white;
+	align-self: center;
+}
+#submit:hover{
+	cursor: pointer;
+}
+iframe{
+	grid-column: 1 / -1;
+	width: 100%;
+	height: 50vh;
+/*	margin-top: 20px;*/
+}
+.come{
+	margin: 20px;
+}
+
